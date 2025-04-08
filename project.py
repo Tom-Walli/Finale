@@ -25,10 +25,11 @@ def leave_prog():
 
 
 me = True
-numb = True
+
 
 
 def prog():
+    numb = True
     while me == True:
         print("What is your favorite Metal/Rock Band? Here are some options")
         time.sleep(2)
@@ -71,9 +72,10 @@ def prog():
                         else:
                             print("That wasn't an option. Try again!")
                             time.sleep(2)
-                    else:
-                        print("Can you please choose Yes or No?")
-                        numb = True
+                else:
+                    print("Can you please choose Yes or No?")
+                    numb == True
+
         else:
             print("That wasn't an option. Try again!")
             time.sleep(2)
