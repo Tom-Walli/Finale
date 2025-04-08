@@ -41,10 +41,6 @@ def prog():
             time.sleep(1)
             me == False
             sys.exit(0)
-        else:
-            print("That wasn't an option. Try again!")
-            time.sleep(2)
-            me == True
         if user_int.lower() in oth:
             print("What band?")
             user_prop = input("Band Name:")
@@ -75,12 +71,13 @@ def prog():
                         else:
                             print("That wasn't an option. Try again!")
                             time.sleep(2)
-
-
                     else:
                         print("Can you please choose Yes or No?")
                         numb = True
-
+        else:
+            print("That wasn't an option. Try again!")
+            time.sleep(2)
+            me == True
 
 prog()
 
