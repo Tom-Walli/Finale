@@ -14,7 +14,7 @@ import time
 import sys
 
 lev = ['easy', 'hard']
-lst = ['Who is the current papa in Ghost as of 2025?', 'Who is the keyboardist in Rammstein', 'What is the top hit by My Chemical Romance?', 'What is the name of the lead singer in Slipknot?', 'True or False. In PAIN Peter Tägtgren recruited his son to play drums for the band.', 'Who is the drummer for Korn?', 'What country did Three Days Grace originate from? ', 'What is the most popular album by Matallica' ]
+lst = ['Who is the current papa in Ghost as of 2025?', 'Who is the keyboardist in Rammstein', 'What is the top hit by My Chemical Romance?', 'What is the name of the lead singer in Slipknot?', 'True or False. In PAIN Peter Tägtgren recruited his son to play drums for the band.', 'Who is the drummer for Korn?', 'What country did Three Days Grace originate from? ', 'What is the most popular album by Matallica', 'what Set It Off song contains the lyrics " Look out, theyre closing in on you now"' ]
 ans1 = ['papa v']
 ans2 = ['flake lorenz']
 ans3 = ['welcome to the black parade']
@@ -23,7 +23,7 @@ ans5 = ['true']
 ans6 = ['ray luzier']
 ans7 = ['canada']
 ans8 = ['the black album']
-ans9 = ['']
+ans9 = ['killer in the mirror']
 ans10 = ['']
 
 def leave_prog():
@@ -31,6 +31,11 @@ def leave_prog():
     time.sleep(2)
     sys.exit(0)
 
+def score():
+    print("Calculating score")
+    time.sleep(2)
+    # print("You scored " + thesum + "/10")
+#create a program called thesum to calculate the score
 
 me = True
 
@@ -121,6 +126,27 @@ def prog():
                                                             if user_opti7.lower() in ans7:
                                                                 print("Correct!")
                                                                 time.sleep(2)
+                                                                print("")
+                                                                print("Question 8/10")
+                                                                print(lst[7])
+                                                                user_opti8 = input("Answer:")
+                                                                if user_opti8.lower() in ans8:
+                                                                    print("Correct!")
+                                                                    time.sleep(2)
+                                                                    print("")
+                                                                    print("Question 9/10")
+                                                                    print(lst[8])
+                                                                    user_opti9 = input("Answer:")
+                                                                    if user_opti9 in ans9:
+                                                                        print("Correct!")
+                                                                        time.sleep(2)
+                                                                        print("")
+                                                                        print("Question 10/10")
+                                                                        print(lst[9])
+                                                                        user_opti10 = input("Answer")
+                                                                        if user_opti10 in ans10:
+                                                                            print("Correct!")
+                                                                            score()
 
 
                                         else:
